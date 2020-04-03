@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AppIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>AppIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppMenu_Options" xml:space="preserve">
+    <value>&amp;Options…</value>
+  </data>
+  <data name="AppMenu_About" xml:space="preserve">
+    <value>&amp;About…</value>
+  </data>
+  <data name="AppMenu_Exit" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="GenericActionErrorDialog_HideDetails" xml:space="preserve">
+    <value>Hide error &amp;details</value>
+  </data>
+  <data name="GenericActionErrorDialog_ShowDetails" xml:space="preserve">
+    <value>Show error &amp;details</value>
+  </data>
+  <data name="ActionErrorDialog_PartialFailureCaption" xml:space="preserve">
+    <value>Some tasks failed</value>
+  </data>
+  <data name="ActionErrorDialog_PartialFailureContent" xml:space="preserve">
+    <value>Not all output streams could process your capture. Refer to the application log for technical information.</value>
+  </data>
+  <data name="AeroIndicatorStrip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>AeroIndicatorStrip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FluentIndicatorStrip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FluentIndicatorStrip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AboutWindow_URI" xml:space="preserve">
+    <value>https://git.io/captain</value>
+  </data>
+  <data name="UpdaterUI_DialogCaption" xml:space="preserve">
+    <value>Update {0}</value>
+  </data>
+  <data name="UpdaterUI_DialogText" xml:space="preserve">
+    <value>A new version of {0} ({1}) is available—yours is {2}.
+Would you like to install it?</value>
+  </data>
+  <data name="AboutWindow_UpdateStatusChecking" xml:space="preserve">
+    <value>Checking for updates</value>
+  </data>
+  <data name="AboutWindow_UpdateStatusDownloading" xml:space="preserve">
+    <value>Downloading updates</value>
+  </data>
+  <data name="AboutWindow_UpdateStatusApplying" xml:space="preserve">
+    <value>Applying updates</value>
+  </data>
+  <data name="AboutWindow_UpdateStatusReadyToRestart" xml:space="preserve">
+    <value>Restart {0} to complete the update</value>
+  </data>
+  <data name="UpdateIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>UpdateIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdaterUI_DialogProgressText" xml:space="preserve">
+    <value>Downloading update…</value>
+  </data>
+  <data name="UpdaterUI_UpdateButton" xml:space="preserve">
+    <value>&amp;Update</value>
+  </data>
+  <data name="UpdaterUI_RemindLaterButton" xml:space="preserve">
+    <value>&amp;Remind me later</value>
+  </data>
+  <data name="UpdaterUI_DialogInstallProgressText" xml:space="preserve">
+    <value>Installing update…</value>
+  </data>
+  <data name="AboutWindow_DistributionType" xml:space="preserve">
+    <value>Distribution type</value>
+  </data>
+  <data name="OptionsWindow_RestoreDialogInstruction" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="OptionsWindow_RestoreDialogContent" xml:space="preserve">
+    <value>Restoring the application will delete all plugins, logs and customizations. We won't touch your captures.</value>
+  </data>
+  <data name="OptionsWindow_RestoreDialogOptionsButton" xml:space="preserve">
+    <value>Restore options only</value>
+  </data>
+  <data name="OptionsWindow_RestoreDialogHardButton" xml:space="preserve">
+    <value>Reset everything</value>
+  </data>
+  <data name="Plugin_DefaultPublisherName" xml:space="preserve">
+    <value>Unknown publisher</value>
+  </data>
+  <data name="OutputStreamSelectionDialog_EmptyMarkup" xml:space="preserve">
+    <value>These are not the droids you are looking for. Move along!</value>
+  </data>
+  <data name="TaskDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TaskDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TaskEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskRegionFixed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TaskRegionFixed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskRegionFullScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TaskRegionFullScreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskRegionGrab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TaskRegionGrab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskTypeRecording" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TaskTypeRecording.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskTypeScreenshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TaskTypeScreenshot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TaskAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EncoderOptions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>EncoderOptions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskPropertiesDialog_NoActions" xml:space="preserve">
+    <value>No actions</value>
+  </data>
+  <data name="TaskPropertiesDialog_SingleAction" xml:space="preserve">
+    <value>1 action</value>
+  </data>
+  <data name="TaskPropertiesDialog_MultipleActions" xml:space="preserve">
+    <value>{0} actions</value>
+  </data>
+  <data name="PluginManager_EncoderConfigurationUIError" xml:space="preserve">
+    <value>The configuration interface for this plugin cannot be displayed.
+Contact the plugin vendor for further information.</value>
+  </data>
+  <data name="CopyToClipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CopyToClipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Placeholder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Placeholder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveToFile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SaveToFile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarMute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarMute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarOptions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarOptions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarRecord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarRecord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarScreenshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarScreenshot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarUnmute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarUnmute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Task_CaptureFailedCaption" xml:space="preserve">
+    <value>Capture failed</value>
+  </data>
+  <data name="Task_CaptureFailedBody" xml:space="preserve">
+    <value>We could not capture the screen due to an internal error.
+Tap here to see details.</value>
+  </data>
+  <data name="Task_CaptureFailedExtendedCaption" xml:space="preserve">
+    <value>Could not capture the screen</value>
+  </data>
+  <data name="Task_CaptureFailedExtendedBody" xml:space="preserve">
+    <value>The required encoder may have not been properly initialized, there were no actions to take or an error occurred while trying to duplicate the desktop.</value>
+  </data>
+  <data name="Task_PartialSuccessCaption" xml:space="preserve">
+    <value>Some actions failed</value>
+  </data>
+  <data name="Task_PartialSuccessBody" xml:space="preserve">
+    <value>Not all actions could process your capture.</value>
+  </data>
+  <data name="Task_SuccessCaption" xml:space="preserve">
+    <value>Screenshot taken!</value>
+  </data>
+  <data name="Task_SuccessBody" xml:space="preserve">
+    <value>All actions succeeded.</value>
+  </data>
+  <data name="Task_ViewDetailsAction" xml:space="preserve">
+    <value>View details</value>
+  </data>
+  <data name="Task_ViewResultsAction" xml:space="preserve">
+    <value>View results</value>
+  </data>
+  <data name="Task_ViewFailuresAction" xml:space="preserve">
+    <value>View failures</value>
+  </data>
+  <data name="CapturePreviewUnavailable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CapturePreviewUnavailable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CaptureResultErrorDetails" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CaptureResultErrorDetails.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CaptureResultUri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>CaptureResultUri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SuccessfulResultOverlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SuccessfulResultOverlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnsuccessfulResultOverlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>UnsuccessfulResultOverlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommonVariable_Day" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="CommonVariable_Hour" xml:space="preserve">
+    <value>hour</value>
+  </data>
+  <data name="CommonVariable_Minute" xml:space="preserve">
+    <value>minute</value>
+  </data>
+  <data name="CommonVariable_Month" xml:space="preserve">
+    <value>month</value>
+  </data>
+  <data name="CommonVariable_Second" xml:space="preserve">
+    <value>second</value>
+  </data>
+  <data name="CommonVariable_ShortYear" xml:space="preserve">
+    <value>two-digit year</value>
+  </data>
+  <data name="CommonVariable_Year" xml:space="preserve">
+    <value>year</value>
+  </data>
+  <data name="CommonVariable_Extension" xml:space="preserve">
+    <value>extension</value>
+  </data>
+  <data name="CommonVariable_Type" xml:space="preserve">
+    <value>type</value>
+  </data>
+  <data name="SaveToFile_DefaultNameTemplate" xml:space="preserve">
+    <value>{10}\Captures\{2}.{0}\{3}.{4}.{5}.{6}.{8}</value>
+  </data>
+  <data name="SaveToFile_Name" xml:space="preserve">
+    <value>Save to file</value>
+  </data>
+  <data name="NeutralResultOverlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>NeutralResultOverlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskHelper_CaptureFailedCaption" xml:space="preserve">
+    <value>Capture failed</value>
+  </data>
+  <data name="TaskHelper_CaptureFailedContent" xml:space="preserve">
+    <value>The video provider failed to capture your desktop.</value>
+  </data>
+  <data name="TaskHelper_EncodingFailedCaption" xml:space="preserve">
+    <value>Encoding failed</value>
+  </data>
+  <data name="TaskHelper_EncodingInitializationFailedContent" xml:space="preserve">
+    <value>We could not initialize the image encoder.</value>
+  </data>
+  <data name="TaskHelper_EncodingFailedContent" xml:space="preserve">
+    <value>The encoder failed to process the captured image.</value>
+  </data>
+  <data name="TaskHelper_NoSuchActionMessage" xml:space="preserve">
+    <value>No such action loaded.</value>
+  </data>
+  <data name="TaskHelper_ActionInitializationFailedCaption" xml:space="preserve">
+    <value>Could not initialize action.</value>
+  </data>
+  <data name="TaskHelper_ActionFailedCaption" xml:space="preserve">
+    <value>The capture could not be processed.</value>
+  </data>
+  <data name="TaskHelper_UnsupportedMediaMessage" xml:space="preserve">
+    <value>This media is not supported by this action.</value>
+  </data>
+  <data name="PluginManager_DefaultActionName" xml:space="preserve">
+    <value>Unknown Action</value>
+  </data>
+  <data name="ActionControl_ErrorDetailsDefaultContent" xml:space="preserve">
+    <value>An unknown error ocurred while performing this action.</value>
+  </data>
+  <data name="TaskDialog_GenericReportButtonContent" xml:space="preserve">
+    <value>&amp;Report…</value>
+  </data>
+  <data name="ActionControl_ContextMenu_CopyUri" xml:space="preserve">
+    <value>&amp;Copy URI</value>
+  </data>
+  <data name="ActionControl_ContextMenu_OpenInFolder" xml:space="preserve">
+    <value>Open in &amp;folder…</value>
+  </data>
+  <data name="ActionControl_ContextMenu_Open" xml:space="preserve">
+    <value>&amp;Open</value>
+  </data>
+  <data name="HUD_CropRectangleHint" xml:space="preserve">
+    <value>Drag your mouse to select a screen region.</value>
+  </data>
+  <data name="AboutWindow_DistType_Standalone" xml:space="preserve">
+    <value>Standalone</value>
+  </data>
+  <data name="AboutWindow_DistType_Full" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="TemplateHelper_Type_Screenshot" xml:space="preserve">
+    <value>Screenshot</value>
+  </data>
+  <data name="TemplateHelper_Type_Recording" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="ActionPropertiesDialog_DefaultActionName" xml:space="preserve">
+    <value>Unknown Action ({0})</value>
+  </data>
+  <data name="CommonVariable_HomeDirectory" xml:space="preserve">
+    <value>user folder</value>
+  </data>
+  <data name="CommonVariable_PicturesDirectory" xml:space="preserve">
+    <value>pictures folder</value>
+  </data>
+  <data name="OptionsWindow_Tasks_BasicOptions" xml:space="preserve">
+    <value>Basic options</value>
+  </data>
+  <data name="OptionsWindow_Tasks_AdvancedOptions" xml:space="preserve">
+    <value>Advanced options</value>
+  </data>
+  <data name="Task_DefaultScreenshotTaskName" xml:space="preserve">
+    <value>Take screenshot</value>
+  </data>
+  <data name="Task_DefaultRecordingTaskName" xml:space="preserve">
+    <value>Record screen</value>
+  </data>
+  <data name="SnackBarGrip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarGrip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarPause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarPause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SnackBarResume" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>SnackBarResume.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TidbitError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TidbitError.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TidbitInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TidbitInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TidbitOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TidbitOk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TidbitWarning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>TidbitWarning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ActionStatus_Tidbit_AllFailed" xml:space="preserve">
+    <value>All actions failed</value>
+  </data>
+  <data name="ActionStatus_Tidbit_SomeFailed" xml:space="preserve">
+    <value>Done – Some actions failed</value>
+  </data>
+  <data name="ActionStatus_Tidbit_AllSucceeded_Screenshot" xml:space="preserve">
+    <value>Screenshot taken</value>
+  </data>
+  <data name="ActionStatus_Tidbit_AllSucceeded_Recording" xml:space="preserve">
+    <value>Recording saved</value>
+  </data>
+  <data name="Hud_SnackBar_ClosePromptInstruction" xml:space="preserve">
+    <value>Do you want to save this recording?</value>
+  </data>
+  <data name="TaskHelper_DisplayTaskExceptionDialog_ReportButtonCaption" xml:space="preserve">
+    <value>&amp;Report…</value>
+  </data>
+  <data name="ClipperCorners" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ClipperCorners.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClipperPickRegion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ClipperPickRegion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClipperPickWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ClipperPickWindow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AcrylicNoiseTexture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>AcrylicNoiseTexture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InvalidCursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Invalid.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NormalCursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Normal.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WindowCursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Window.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WorkflowPropertyDialog_UnnamedWorkflowTitleFormat" xml:space="preserve">
+    <value>Workflow properties – {0}</value>
+  </data>
+  <data name="WorkflowPropertyDialog_NamedWorkflowTitleFormat" xml:space="preserve">
+    <value>“{0}” properties – {01}</value>
+  </data>
+  <data name="WorkflowType_Motion" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="WorkflowType_Still" xml:space="preserve">
+    <value>Still image</value>
+  </data>
+  <data name="RegionType_ActiveMonitor" xml:space="preserve">
+    <value>Current monitor</value>
+  </data>
+  <data name="RegionType_ActiveWindow" xml:space="preserve">
+    <value>Active window</value>
+  </data>
+  <data name="RegionType_Fixed" xml:space="preserve">
+    <value>Fixed region</value>
+  </data>
+  <data name="RegionType_FullDesktop" xml:space="preserve">
+    <value>All monitors</value>
+  </data>
+  <data name="RegionType_Manual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="EraseField" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>EraseField.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HotkeyBox_ResetToolTipText" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ClipboardHandlerExtensionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ClipboardHandlerExtensionIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileHandlerExtensionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>FileHandlerExtensionIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericExtensionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>GenericExtensionIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

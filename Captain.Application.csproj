@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <!-- default configuration and platform -->
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Configuration)' == ''">x86</Platform>
+    <ProjectGuid>{AE80A08C-63C3-42F4-9C40-C82FECD83E2C}</ProjectGuid>
+    <RootNamespace>Captain.Application</RootNamespace>
+    <AssemblyName>Captain.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>Captain.Application.Application</StartupObject>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <OutputPath>..\Out\$(Configuration)\$(Platform)\net45\</OutputPath>
+    <LangVersion>latest</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>TRACE;DEBUG;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DefineConstants>TRACE;DEBUG;WIN64</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineConstants>TRACE;WIN64</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="App.config" />
+    <None Include="LICENSE.md" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="README.md" />
+    <None Include="Resources\README.md" />
+    <None Include="UI\Common\LinkLabel2\LICENSE.md" />
+    <None Include="UI\Common\LinkLabel2\README.md" />
+    <None Include="UI\Helper\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resources.Designer.cs" />
+    <Compile Include="Source\Application.cs" />
+    <Compile Include="Source\Codec\StillImage\PngWicStillImageCodec.cs" />
+    <Compile Include="Source\ExtensionManager.cs" />
+    <Compile Include="Source\Handler\ClipboardHandler.cs" />
+    <Compile Include="Source\Handler\FileHandler.cs" />
+    <Compile Include="Source\Helper\BitHelper.cs" />
+    <Compile Include="Source\Helper\DisplayHelper.cs" />
+    <Compile Include="Source\Helper\EnumAdapterHelper.cs" />
+    <Compile Include="Source\Helper\Hook\DesktopKeyboardHook.cs" />
+    <Compile Include="Source\Helper\Hook\DesktopMouseHook.cs" />
+    <Compile Include="Source\Helper\Injection\InjectionHelper.cs" />
+    <Compile Include="Source\Helper\Injection\InjectionState.cs" />
+    <Compile Include="Source\Helper\KeysExtensions.cs" />
+    <Compile Include="Source\Helper\ShellHelper.cs" />
+    <Compile Include="Source\Helper\Template\CommonVariable.cs" />
+    <Compile Include="Source\Helper\Template\TemplateHelper.cs" />
+    <Compile Include="Source\Helper\TypeAdapterHelper.cs" />
+    <Compile Include="Source\MotionWorkflow\MotionCaptureSession.cs" />
+    <Compile Include="Source\MotionWorkflow\MotionCaptureState.cs" />
+    <Compile Include="Source\MultiStream.cs" />
+    <Compile Include="Source\Option\AutoStart\AutoStartManager.cs" />
+    <Compile Include="Source\Option\AutoStart\AutoStartPolicy.cs" />
+    <Compile Include="Source\Option\Options.cs" />
+    <Compile Include="Source\Option\UpdatePolicy.cs" />
+    <Compile Include="Source\Update\UpdateManager.cs" />
+    <Compile Include="Source\Update\UpdaterAvailability.cs" />
+    <Compile Include="Source\Update\UpdateStatus.cs" />
+    <Compile Include="Source\Workflow.cs" />
+    <Compile Include="UI\About\AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\About\AboutWindow.Designer.cs">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Common\EllipsisProgressLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Common\HotkeyBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Common\LinkButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Common\LinkLabel2\LinkLabel2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Common\ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Common\Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Helper\DragDropLibCore\DataObject.cs" />
+    <Compile Include="UI\Helper\DragDropLibCore\DataObjectExtensions.cs" />
+    <Compile Include="UI\Helper\DragDropLibCore\DragDropHelper.cs" />
+    <Compile Include="UI\Helper\DragDropLibCore\IDragSourceHelper.cs" />
+    <Compile Include="UI\Helper\DragDropLibCore\IDropTargetHelper.cs" />
+    <Compile Include="UI\Helper\DragDropLibCore\NativeStructures.cs" />
+    <Compile Include="UI\Helper\SwfDragDropLib\SwfDataObjectExtensions.cs" />
+    <Compile Include="UI\Helper\SwfDragDropLib\SwfDragDropLibExtensions.cs" />
+    <Compile Include="UI\Helper\SwfDragDropLib\SwfDragSourceHelper.cs" />
+    <Compile Include="UI\Helper\SwfDragDropLib\SwfDropTargetHelper.cs" />
+    <Compile Include="UI\Helper\SwfDragDropLib\SwfDropTargetHelperExtensions.cs" />
+    <Compile Include="UI\Helper\UpdaterUiHelper.cs" />
+    <Compile Include="UI\Hud\HudManager.cs" />
+    <Compile Include="UI\Option\OptionsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Option\OptionsWindow.Designer.cs">
+      <DependentUpon>OptionsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Option\TabStripControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Option\Workflows\WorkflowPropertyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Option\Workflows\WorkflowPropertyDialog.Designer.cs">
+      <DependentUpon>WorkflowPropertyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TrayIcon\IndicatorStatus.cs" />
+    <Compile Include="UI\TrayIcon\Renderers\AeroIndicatorRenderer.cs" />
+    <Compile Include="UI\TrayIcon\Renderers\FluentIndicatorRenderer.cs" />
+    <Compile Include="UI\TrayIcon\Renderers\IIndicatorRenderer.cs" />
+    <Compile Include="UI\TrayIcon\TrayIcon.cs" />
+    <Compile Include="UI\Option\Workflows\WorkflowHandlerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Option\Workflows\WorkflowHandlerControl.Designer.cs">
+      <DependentUpon>WorkflowHandlerControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AcrylicNoiseTexture.png" />
+    <Content Include="Resources\AeroIndicatorStrip.png" />
+    <Content Include="Resources\AppIcon.ico" />
+    <Content Include="Resources\CapturePreviewUnavailable.png" />
+    <Content Include="Resources\CaptureResultErrorDetails.png" />
+    <Content Include="Resources\CaptureResultUri.png" />
+    <EmbeddedResource Include="Resources\ClipboardHandlerExtensionIcon.ico" />
+    <Content Include="Resources\ClipperCorners.png" />
+    <Content Include="Resources\ClipperPickRegion.png" />
+    <Content Include="Resources\ClipperPickWindow.png" />
+    <Content Include="Resources\CopyToClipboard.png" />
+    <Content Include="Resources\EncoderOptions.png" />
+    <Content Include="Resources\EraseField.png" />
+    <EmbeddedResource Include="Resources\FileHandlerExtensionIcon.ico" />
+    <Content Include="Resources\FluentIndicatorStrip.png" />
+    <Content Include="Resources\GenericExtensionIcon.ico" />
+    <Content Include="Resources\HudOverlayShader.hlsl" />
+    <Content Include="Resources\Invalid.cur" />
+    <Content Include="Resources\Logo.png" />
+    <Content Include="Resources\NeutralResultOverlay.png" />
+    <Content Include="Resources\Normal.cur" />
+    <Content Include="Resources\Placeholder.png" />
+    <Content Include="Resources\SaveToFile.png" />
+    <Content Include="Resources\SnackBarClose.png" />
+    <Content Include="Resources\SnackBarGrip.png" />
+    <Content Include="Resources\SnackBarMute.png" />
+    <Content Include="Resources\SnackBarOptions.png" />
+    <Content Include="Resources\SnackBarPause.png" />
+    <Content Include="Resources\SnackBarRecord.png" />
+    <Content Include="Resources\SnackBarResume.png" />
+    <Content Include="Resources\SnackBarScreenshot.png" />
+    <Content Include="Resources\SnackBarStop.png" />
+    <Content Include="Resources\SnackBarUnmute.png" />
+    <Content Include="Resources\SuccessfulResultOverlay.png" />
+    <Content Include="Resources\TaskAdd.png" />
+    <Content Include="Resources\TaskDelete.png" />
+    <Content Include="Resources\TaskEdit.png" />
+    <Content Include="Resources\TaskRegionFixed.png" />
+    <Content Include="Resources\TaskRegionFullScreen.png" />
+    <Content Include="Resources\TaskRegionGrab.png" />
+    <Content Include="Resources\TaskTypeRecording.png" />
+    <Content Include="Resources\TaskTypeScreenshot.png" />
+    <Content Include="Resources\TidbitError.png" />
+    <Content Include="Resources\TidbitInfo.png" />
+    <Content Include="Resources\TidbitOk.png" />
+    <Content Include="Resources\TidbitWarning.png" />
+    <Content Include="Resources\UnsuccessfulResultOverlay.png" />
+    <Content Include="Resources\UpdateIcon.ico" />
+    <Content Include="Resources\Window.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resources.resx" />
+    <EmbeddedResource Include="UI\About\AboutWindow.resx">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Option\OptionsWindow.resx">
+      <DependentUpon>OptionsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Option\Workflows\WorkflowPropertyDialog.resx">
+      <DependentUpon>WorkflowPropertyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Source\Codec\Video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aperture.Windows\Aperture.Windows.csproj">
+      <Project>{1dadf60c-56ba-46b1-8b38-0249c8dd3a37}</Project>
+      <Name>Aperture.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Captain.Common\Captain.Common.csproj">
+      <Project>{70e420b2-345a-4cfd-b24b-c90463842ee0}</Project>
+      <Name>Captain.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Captain.UI\Captain.UI.csproj">
+      <Project>{4fa00f2e-fa39-4b3b-b403-821c18f3db36}</Project>
+      <Name>Captain.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs.Wpf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0c15020868fd6249, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ookii.Dialogs.1.0\lib\net35\Ookii.Dialogs.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Desktop, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Desktop.4.2.0\lib\net45\SharpDX.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.4.2.0\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D11.4.2.0\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D9.4.2.0\lib\net45\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.4.2.0\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Mathematics.4.2.0\lib\net45\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.MediaFoundation.4.2.0\lib\net45\SharpDX.MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
